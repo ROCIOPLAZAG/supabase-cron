@@ -2,8 +2,8 @@ name: Run Supabase Reminder Function
 
 on:
   schedule:
-    - cron: "0 9 * * *"   # Ejecuta cada día a las 09:00
-  workflow_dispatch:      # Permite ejecutarlo manualmente
+    - cron: "0 9 * * *"
+  workflow_dispatch:
 
 jobs:
   call-function:
