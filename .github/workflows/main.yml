@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: Call Supabase Edge Function
         run: |
-          curl -X POST "https://zwktxojdbwmnkqndkfo.supabase.co/functions/v1/bright-handler" \
+          curl -X POST "https://zwktxojdbdwmnkqndkfo.supabase.co/functions/v1/bright-handler" \
           -H "Content-Type: application/json"
