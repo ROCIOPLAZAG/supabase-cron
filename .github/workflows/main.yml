@@ -1,0 +1,15 @@
+name: Run Supabase Reminder Function
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # Ejecuta cada día a las 09:00
+  workflow_dispatch:      # Permite ejecutarlo manualmente
+
+jobs:
+  call-function:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Supabase Edge Function
+        run: |
+          curl -X POST "https://zwktxojdbwmnkqndkfo.supabase.co/functions/v1/bright-handler" \
+          -H "Content-Type: application/json"
